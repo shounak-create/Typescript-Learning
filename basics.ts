@@ -14,3 +14,8 @@ let StudentRecord: [string,number,boolean]= ["ABC",22,true]
 function square(n:number): number{
     return n*n
 }
+
+//Write a function logMessage(msg: string): void that just prints the message (no return value).
+function logMessage(msg:string):void{
+    console.log("No return value using void");
+}
