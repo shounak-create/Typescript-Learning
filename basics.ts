@@ -11,6 +11,6 @@ let movies: string[] = ["interstellar","martian"]
 let StudentRecord: [string,number,boolean]= ["ABC",22,true]
 
 // Write a function square(n: number): number that returns the square of a number.
-function square(n:number){
+function square(n:number): number{
     return n*n
 }
