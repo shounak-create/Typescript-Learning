@@ -8,3 +8,10 @@ let x = { isbn: "sjdf", title: "sdfnn", pages: 200 };
 console.log(x);
 let dg = { name: "window", breed: "husky" };
 console.log(dg);
+let C1 = { wheels: 4, engine: "V8" };
+console.log(C1);
+let e1 = {
+    name: "ABC", address: { city: "pune", pincode: 22 }
+};
+console.log(e1);
+console.log(e1.address.city);

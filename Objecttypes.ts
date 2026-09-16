@@ -34,3 +34,32 @@ interface Dog extends Animal{
 
 let dg:Dog = {name:"window",breed:"husky"}
 console.log(dg);
+
+// Using type, create Vehicle = { wheels: number } and Motorized = { engine: string }. Combine them into Car using &, and create a car object with both properties.
+type Vehicle={
+    wheels:number;
+};
+type Motorized={
+        engine:string;
+};
+
+type Car1 = Vehicle & Motorized;
+
+let C1:Car1 = {wheels:4,engine:"V8"};
+console.log(C1);
+
+
+// Create an interface Employee with name (string) and a nested address object containing city (string) and pincode (number). Create one employee object and log employee.address.city.
+
+interface Employee{
+    name:string;
+    address:{
+        city:string,
+        pincode:number
+    }
+}
+let e1:Employee = {
+    name:"ABC", address:{city:"pune",pincode:22}
+}
+console.log(e1);
+console.log(e1.address.city);
