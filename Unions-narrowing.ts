@@ -12,6 +12,19 @@ describeValue("twenty")
 
 // Create type Vehicle = { wheels: number } and type Powered = { engine: string }, combine into type MotorVehicle using &, and create an object of that type.
 
+type Vehicle = {
+    wheels:number;
+}
+
+type Powered = {
+    engine:string;
+}
+
+type MotorVehicle = Vehicle & Powered;
+
+let M1:MotorVehicle = {wheels:2,engine:"v4"}
+console.log(M1);
+
 
 // Create a literal type Role = "admin" | "editor" | "viewer". Write a function checkAccess(role: Role) that logs a different permission message per role.
 

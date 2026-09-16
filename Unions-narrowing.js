@@ -10,7 +10,8 @@ function describeValue(value) {
 }
 describeValue(20);
 describeValue("twenty");
-// Create type Vehicle = { wheels: number } and type Powered = { engine: string }, combine into type MotorVehicle using &, and create an object of that type.
+let M1 = { wheels: 2, engine: "v4" };
+console.log(M1);
 // Create a literal type Role = "admin" | "editor" | "viewer". Write a function checkAccess(role: Role) that logs a different permission message per role.
 // Write an overloaded function format — if given a string, return it uppercased; if given a number, return it fixed to 2 decimals.
 // Create a class BankAccount with a private balance, public readonly accountNumber, methods deposit(amount: number) and withdraw(amount: number) (throw an error if withdrawal exceeds balance).
