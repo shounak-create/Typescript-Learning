@@ -77,3 +77,21 @@ s1.withdraw(26)
 s1.display();
 // Create an abstract class Shape with an abstract method getArea(): number. Create two subclasses Circle and Rectangle implementing it, and log both areas.
 
+abstract class Shape{
+    abstract getArea(): number;
+    describe(): string{
+        return `Area is ${this.getArea()}`;
+    }
+}
+
+class Circle extends Shape{
+    constructor(private radius:number){
+        super();
+    }
+    getArea(): number {
+        return Math.PI * this.radius ** 2;
+    }
+}
+
+let C2 = new Circle(4);
+console.log(C2.getArea());
