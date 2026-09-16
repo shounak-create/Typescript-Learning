@@ -28,6 +28,12 @@ console.log(M1);
 
 // Create a literal type Role = "admin" | "editor" | "viewer". Write a function checkAccess(role: Role) that logs a different permission message per role.
 
+type Role = "admin"|"editor"|"viewer";
+
+function checkAccess(role:Role) {
+    console.log("access Granted to: "+role);
+}
+checkAccess("admin")
 
 // Write an overloaded function format — if given a string, return it uppercased; if given a number, return it fixed to 2 decimals.
 
