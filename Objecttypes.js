@@ -4,3 +4,7 @@ let e = { brand: "totoya", model: "X" };
 let y = { brand: "toyota", model: "Y", year: 2024 };
 console.log(e);
 console.log(y);
+let x = { isbn: "sjdf", title: "sdfnn", pages: 200 };
+console.log(x);
+// x.isbn = "jjj"
+// console.log(x);
