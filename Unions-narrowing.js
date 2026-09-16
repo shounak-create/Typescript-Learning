@@ -20,6 +20,34 @@ function overloaded(a, b) {
     return a + b;
 }
 overloaded(22, 23);
-overloaded(22, "ABV");
+// overloaded(22,"ABV")
 // Create a class BankAccount with a private balance, public readonly accountNumber, methods deposit(amount: number) and withdraw(amount: number) (throw an error if withdrawal exceeds balance).
+class BankAccount {
+    balance;
+    accountNumber;
+    constructor(balance, accountNumber) {
+        this.balance = balance;
+        this.accountNumber = accountNumber;
+    }
+    deposit(amount) {
+        this.balance += amount;
+    }
+    withdraw(amount) {
+        if (amount <= this.balance) {
+            this.balance -= amount;
+        }
+        else {
+            return "You don't have enough balance";
+        }
+    }
+    display() {
+        console.log(this.balance);
+        console.log(this.accountNumber);
+    }
+}
+let s1 = new BankAccount(5000, 3467543);
+s1.deposit(25);
+s1.display();
+s1.withdraw(26);
+s1.display();
 // Create an abstract class Shape with an abstract method getArea(): number. Create two subclasses Circle and Rectangle implementing it, and log both areas.
