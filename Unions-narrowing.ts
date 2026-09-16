@@ -37,6 +37,12 @@ checkAccess("admin")
 
 // Write an overloaded function format — if given a string, return it uppercased; if given a number, return it fixed to 2 decimals.
 
+function overloaded(a:number,b:number):number
+function overloaded(a:any,b:any):any{
+    return a+b;
+}
+overloaded(22,23)
+overloaded(22,"ABV")
 
 // Create a class BankAccount with a private balance, public readonly accountNumber, methods deposit(amount: number) and withdraw(amount: number) (throw an error if withdrawal exceeds balance).
 

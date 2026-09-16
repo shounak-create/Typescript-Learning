@@ -16,6 +16,10 @@ function checkAccess(role) {
     console.log("access Granted to: " + role);
 }
 checkAccess("admin");
-// Write an overloaded function format — if given a string, return it uppercased; if given a number, return it fixed to 2 decimals.
+function overloaded(a, b) {
+    return a + b;
+}
+overloaded(22, 23);
+overloaded(22, "ABV");
 // Create a class BankAccount with a private balance, public readonly accountNumber, methods deposit(amount: number) and withdraw(amount: number) (throw an error if withdrawal exceeds balance).
 // Create an abstract class Shape with an abstract method getArea(): number. Create two subclasses Circle and Rectangle implementing it, and log both areas.
