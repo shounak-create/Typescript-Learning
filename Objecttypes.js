@@ -6,5 +6,5 @@ console.log(e);
 console.log(y);
 let x = { isbn: "sjdf", title: "sdfnn", pages: 200 };
 console.log(x);
-// x.isbn = "jjj"
-// console.log(x);
+let dg = { name: "window", breed: "husky" };
+console.log(dg);
