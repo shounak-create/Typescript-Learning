@@ -30,19 +30,27 @@ console.log(M1);
 
 type Role = "admin"|"editor"|"viewer";
 
-function checkAccess(role:Role) {
-    console.log("access Granted to: "+role);
+function checkAccess(role: Role) {
+  if (role === "admin") console.log("Full access granted");
+  else if (role === "editor") console.log("Can edit content");
+  else console.log("Read-only access");
 }
 checkAccess("admin")
 
 // Write an overloaded function format — if given a string, return it uppercased; if given a number, return it fixed to 2 decimals.
 
-function overloaded(a:number,b:number):number
-function overloaded(a:any,b:any):any{
-    return a+b;
+function format(value: string): string;
+function format(value: number): string;
+function format(value: any): string {
+  if (typeof value === "string") {
+    return value.toUpperCase();
+  } else {
+    return value.toFixed(2);
+  }
 }
-overloaded(22,23)
-// overloaded(22,"ABV")
+
+console.log(format("hello"));
+console.log(format(3.14159));
 
 // Create a class BankAccount with a private balance, public readonly accountNumber, methods deposit(amount: number) and withdraw(amount: number) (throw an error if withdrawal exceeds balance).
 
@@ -92,6 +100,18 @@ class Circle extends Shape{
         return Math.PI * this.radius ** 2;
     }
 }
+
+class Rectangle extends Shape {
+  constructor(private width: number, private height: number) {
+    super();
+  }
+  getArea(): number {
+    return this.width * this.height;
+  }
+}
+
+let r1 = new Rectangle(4, 5);
+console.log(r1.getArea());
 
 let C2 = new Circle(4);
 console.log(C2.getArea());
