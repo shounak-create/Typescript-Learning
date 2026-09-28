@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Fixing from './usestate/fixing'
-import Excercises from './usestate/Excercises'
+import Excercises from './usestate/Excercises';
+import PracticeExcercises from './useRef/practiceExcercises';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -8,7 +9,8 @@ function App() {
   return (
     <div>
       {/* <Fixing /> */}
-      <Excercises />
+      {/* <Excercises /> */}
+      <PracticeExcercises />
     </div>
   )
 }
