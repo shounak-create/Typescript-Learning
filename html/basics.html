@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shounak Pandit</title>
+  </head>
+  <body>
+    <header>
+      <h1>Shounak Pandit</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#goals">Goals</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Shounak, a third-year IT student who loves building web apps.</p>
+        <figure>
+          <img src="photo.jpg" alt="Portrait of Shounak" width="200" />
+          <figcaption>Me at the college hackathon</figcaption>
+        </figure>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>Django</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <!-- Goals Section -->
+      <section id="goals">
+        <h2>Learning Goals</h2>
+        <ol>
+          <li>Master HTML</li>
+          <li>Master CSS</li>
+          <li>Learn Tailwind</li>
+        </ol>
+        <p>
+          My favorite platform: 
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </p>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <table>
+          <caption>My Recent Projects</caption>
+          <thead>
+            <tr>
+              <th scope="col">Project</th>
+              <th scope="col">Tech Stack</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Portfolio Website</td>
+              <td>HTML, CSS</td>
+              <td>In Progress</td>
+            </tr>
+            <tr>
+              <td>Task Tracker</td>
+              <td>JavaScript, Python</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>E-commerce API</td>
+              <td>Django, MongoDB</td>
+              <td>Planned</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="fullname">Full Name</label><br>
+            <input type="text" id="fullname" name="fullname" required minlength="3">
+          </p>
+
+          <p>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+
+          <p>
+            <label for="year">Year of Study</label><br>
+            <select id="year" name="year">
+              <option value="">-- Choose Year --</option>
+              <option value="fe">First Year</option>
+              <option value="se">Second Year</option>
+              <option value="te">Third Year</option>
+            </select>
+          </p>
+
+          <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <input type="radio" id="pref-email" name="contact_method" value="email">
+            <label for="pref-email">Email</label>
+
+            <input type="radio" id="pref-phone" name="contact_method" value="phone">
+            <label for="pref-phone">Phone</label>
+          </fieldset>
+
+          <p>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="consent" name="consent">
+            <label for="consent">I agree to be contacted</label>
+          </p>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Shounak Pandit</p>
+    </footer>
+  </body>
+</html>
