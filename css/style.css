@@ -1,0 +1,29 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #222;
+  background-color: #e8ecec;
+}
+
+h1, h2 {
+  color: black;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+nav a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.status {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+section > h2 {
+  border-bottom: 2px solid black;
+}
