@@ -1,29 +1,93 @@
+/* 1. Box Sizing Reset */
+/* * {
+  box-sizing: border-box;
+} */
+
+/* 2. Base Typography & Body Styles */
 body {
-  font-family: 'Courier New', Courier, monospace;
-  color: #222;
-  background-color: #e8ecec;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
 }
 
-h1, h2 {
-  color: black;
-  font-family: 'Lucida Sans', Verdana, sans-serif;
+/* Header & Navigation */
+h1 {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 nav a {
+  margin: 0 10px;
   text-decoration: none;
   color: #0066cc;
 }
 
 nav a:hover {
-  color: aqua;
   text-decoration: underline;
 }
 
-.status {
-  color: darkgreen;
-  font-weight: bold;
+/* 3. Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 4. Section / Card Styling */
+section {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
 }
 
 section > h2 {
-  border-bottom: 2px solid black;
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* 5. Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* Form Polish */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #666;
 }
