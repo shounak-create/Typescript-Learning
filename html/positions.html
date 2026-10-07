@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Position test</title>
+  {% comment %} <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding-bottom: 100vh; }
+
+    .bar {
+      position: sticky;
+      top: 0;
+      background: gold;
+      padding: 12px;
+    }
+
+    .box { background: lightblue; padding: 20px; margin: 10px; }
+
+    .shifted { position: relative; top: 20px; left: 30px; }
+
+    .card { position: relative; background: #eee; padding: 30px; margin: 10px; }
+    .tag { position: absolute; top: 8px; right: 8px; background: tomato; color: white; padding: 2px 8px; }
+
+    .fixed-note { position: fixed; bottom: 20px; right: 20px; background: black; color: white; padding: 10px; }
+  </style> {% endcomment %}
+</head>
+<body>
+  {% comment %} <div class="bar">STICKY bar: scroll down and watch me</div>
+
+  <div class="box">Box 1 (normal)</div>
+  <div class="box shifted">Box 2 (relative: moved, but its gap stays)</div>
+  <div class="box">Box 3 (normal): notice the gap above me didn't close</div>
+
+  <div class="card">
+    Card (relative, the reference box)
+    <span class="tag">ABSOLUTE</span>
+  </div>
+
+  <div class="fixed-note">FIXED: I never move</div>
+   {% endcomment %}
+    <div class="outer" style="position: relative; background: lightblue;">
+  <div class="inner">
+    Inner box
+    <span class="tag" style="position: absolute;">New</span>
+  </div>
+</div>
+</div>
+</body>
+</html>
